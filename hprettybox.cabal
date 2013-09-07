@@ -1,0 +1,33 @@
+name:                hprettybox
+version:             0.1.0
+synopsis:            Box drawing
+description:         A library to draw a box around a text
+license:             BSD3
+license-file:        LICENSE
+author:              José Romildo Malaquias
+maintainer:          José Romildo Malaquias <malaquias@gmail.com>
+stability:           provisional
+homepage:            http://github.com/romildo/hprettybox/
+bug-reports:         http://github.com/romildo/hprettybox/issues
+copyright:           Copyright (C) 2011-2012 José Romildo Malaquias
+category:            Text
+build-type:          Simple
+
+extra-source-files:  README.md
+
+cabal-version:       >=1.6
+
+source-repository head
+  type: git
+  location: git://github.com/romildo/hprettybox.git
+
+library
+  hs-source-dirs: src
+
+  build-depends:
+    base >= 4 && < 5
+
+  exposed-modules:
+    Text.PrettyPrint.Box
+
+  ghc-options: -O2 -fspec-constr
